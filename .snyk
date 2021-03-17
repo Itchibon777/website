@@ -1,0 +1,13 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - gatsby > joi2gql > hoek:
+        patched: '2021-03-17T15:47:28.532Z'
+  SNYK-JS-LODASH-567746:
+    - gatsby > devcert > lodash:
+        patched: '2021-03-17T15:47:28.532Z'
+    - gatsby > @pmmmwh/react-refresh-webpack-plugin > react-dev-utils > inquirer > lodash:
+        patched: '2021-03-17T15:47:28.532Z'
