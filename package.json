@@ -16,7 +16,9 @@
     "lint": "tslint 'src/**/*.{ts,tsx}' -p tsconfig.json",
     "start": "npm run dev",
     "test": "npm run type-check && npm run lint",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -62,7 +64,8 @@
     "react-helmet": "^6.0.0",
     "react-modal-video": "^1.2.3",
     "react-tweet-embed": "^1.2.2",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.3",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.10",
@@ -77,5 +80,6 @@
     "tslint-config-blvd": "^1.2.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.3.0"
-  }
+  },
+  "snyk": true
 }
